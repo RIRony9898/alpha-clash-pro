@@ -19,7 +19,7 @@
       class="bg-[url(../images/background.png)] min-h-screen bg-no-repeat bg-center flex justify-center items-center"
     >
       <!-- Initial page start -->
-      <section class="home flex flex-col justify-center items-center gap-14">
+      <section class="home flex flex-col justify-center items-center gap-14 hidden">
         <h1 class="font-anton text-9xl text-white">Alpha Clash Pro</h1>
         <p class="text-xl font-medium">
           Unleash Your Keyboard Kung Fu : Press “Enter” to Play
@@ -32,7 +32,67 @@
         </button>
       </section>
       <!-- Initial page end -->
-      <section class="play-ground"></section>
+
+      <!-- game section start -->
+      <section class="play-ground flex flex-col gap-20">
+        <!-- screen start -->
+        <div class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] rounded-2xl bg-[#FFFFFFB3]">1024×320</div>
+        <!-- screen end -->
+
+        <!-- kbd start -->
+         <div>
+            <div class="my-1 flex w-full justify-center gap-1">
+                <kbd class="kbd">q</kbd>
+                <kbd class="kbd">w</kbd>
+                <kbd class="kbd">e</kbd>
+                <kbd class="kbd">r</kbd>
+                <kbd class="kbd">t</kbd>
+                <kbd class="kbd">y</kbd>
+                <kbd class="kbd">u</kbd>
+                <kbd class="kbd">i</kbd>
+                <kbd class="kbd">o</kbd>
+                <kbd class="kbd">p</kbd>
+              </div>
+              <div class="my-1 flex w-full justify-center gap-1">
+                <kbd class="kbd">a</kbd>
+                <kbd class="kbd">s</kbd>
+                <kbd class="kbd">d</kbd>
+                <kbd class="kbd">f</kbd>
+                <kbd class="kbd">g</kbd>
+                <kbd class="kbd">h</kbd>
+                <kbd class="kbd">j</kbd>
+                <kbd class="kbd">k</kbd>
+                <kbd class="kbd">l</kbd>
+              </div>
+              <div class="my-1 flex w-full justify-center gap-1">
+                <kbd class="kbd">z</kbd>
+                <kbd class="kbd">x</kbd>
+                <kbd class="kbd">c</kbd>
+                <kbd class="kbd">v</kbd>
+                <kbd class="kbd">b</kbd>
+                <kbd class="kbd">n</kbd>
+                <kbd class="kbd">m</kbd>
+                <kbd class="kbd">/</kbd>
+              </div>
+         </div>
+        <!-- kbd end -->
+
+        <!-- life score start -->
+         <div class="flex justify-between">
+            <button class="btn bg-[#894189] rounded-full">
+                Life
+                <img src="./images/heart-spark.svg" alt="">
+                <span>1</span>
+              </button>
+            <button class="btn bg-[#360490] rounded-full">
+                Score
+                <img src="./images/dollar.svg" alt="">
+                <span>1</span>
+              </button>
+         </div>
+        <!-- life score end -->
+      </section>
+      <!-- game section end -->
       <section class="score"></section>
     </main>
   </body>
